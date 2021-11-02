@@ -1,5 +1,5 @@
 import { useTheme } from "@emotion/react";
-import { colors, Grid, Paper, Typography } from "@mui/material";
+import { Box, colors, Grid, Paper, Typography } from "@mui/material";
 
 const DragArea = (props) => {
   const theme = useTheme();
@@ -13,9 +13,11 @@ const DragArea = (props) => {
         margin: 5,
       }}
     >
-      <Grid sx={{ backgroundColor: "white", height: 500 }}>
-        {" "}
-        <Typography color="">Drag Area</Typography>
+      <Grid sx={{ backgroundColor: "white", height: "100%" }}>
+        <Box sx={{ height: 250 }}>
+          {" "}
+          <Typography color="">Drag Area</Typography>
+        </Box>{" "}
       </Grid>
     </Paper>
   );
