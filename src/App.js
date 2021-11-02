@@ -4,11 +4,11 @@ import SearchBar from "../src/components/SearchBar.js";
 import DragArea from "../src/components/DragArea";
 import { useState } from "react";
 function App() {
-  const [setlist, setSetlist] = useState("");
-  console.log(setlist);
+  const [picture, setPicture] = useState("");
+  console.log(picture);
   return (
     <div className="App">
-      <SearchBar setSetlist={setSetlist}></SearchBar>
+      <SearchBar setPicture={setPicture}></SearchBar>
       <DragArea></DragArea>
     </div>
   );

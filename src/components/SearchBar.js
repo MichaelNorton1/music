@@ -51,7 +51,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-export default function SearchBar({ setSetlist }) {
+export default function SearchBar({ setPicture }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       {" "}
@@ -74,7 +74,7 @@ export default function SearchBar({ setSetlist }) {
           >
             Photo Collections
           </Typography>
-          <Search onChange={(e) => setSetlist(e.target.value)}>
+          <Search onChange={(e) => setPicture(e.target.value)}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
