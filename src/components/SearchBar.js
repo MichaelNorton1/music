@@ -64,7 +64,7 @@ export default function SearchBar({ setPicture }) {
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <Typography>Log In</Typography>
+            {/* <Typography>Log In</Typography> */}
           </IconButton>
           <Typography
             variant="h6"
@@ -74,7 +74,7 @@ export default function SearchBar({ setPicture }) {
           >
             Photo Collections
           </Typography>
-          <Search onChange={(e) => setPicture(e.target.value)}>
+          {/* <Search onChange={(e) => setPicture(e.target.value)}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
@@ -82,7 +82,7 @@ export default function SearchBar({ setPicture }) {
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
             />
-          </Search>
+          </Search> */}
         </Toolbar>
       </AppBar>
     </Box>
